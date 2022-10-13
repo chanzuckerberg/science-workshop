@@ -1,23 +1,29 @@
-<div class="project-card">
-  <div class="flex">
+<div class="project-card flex flex-col">
+  <div class="flex align-items-center">
     <img class="icon-large" src="assets/images/IconProjectPublicLarge.svg" />
     <a href="{{ project.url }}">{{ project.title }}</a>
   </div>
-  <div>
+  <div class="flex grow">
     {{ project.shortDescription}}
   </div>
   <div class="flex">
-    <div class="flex align-center">
-      <img class="icon-small" src="assets/images/star.svg" />
-      {{ project.stars }}
-    </div>
-    <div class="flex align-center">
-      <img class="icon-small" src="assets/images/fork.svg" />
-      {{ project.forks }}
-    </div>
-    <div class="flex align-center">
-      <img class="icon-small" src="assets/images/open.svg" />
-      <a href="{{ project.url }}">More Info</a>
-    </div>
+    {% if project.stars %}
+      <div class="info-bar-item">
+        <img class="icon-small" src="assets/images/star.svg" />
+        {{ project.stars }}
+      </div>
+    {% endif %}
+    {% if project.forks %}
+      <div class="info-bar-item">
+        <img class="icon-small" src="assets/images/fork.svg" />
+        {{ project.forks }}
+      </div>
+    {% endif %}
+    {% if project.infoLink %}
+      <div class="info-bar-item">
+        <img class="icon-small" src="assets/images/open.svg" />
+        <a href="{{ project.url }}">More Info</a>
+      </div>
+    {% endif %}
   </div>
 </div>
