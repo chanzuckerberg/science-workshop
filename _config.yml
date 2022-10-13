@@ -22,6 +22,7 @@ baseurl: /science-workshop
 github_username: mmmmmmaya
 minimal_mistakes_skin: default
 github: [metadata]
+logo: assets/images/science-workshop-logo.svg
 
 # Build settings
 markdown: kramdown

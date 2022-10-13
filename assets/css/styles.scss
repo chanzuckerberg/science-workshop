@@ -4,8 +4,11 @@
 /**
  * Colors
  */
+$black: #000000;
+
 $gray-100: #F8F8F8;
 $gray-300: #CCCCCC;
+$gray-600: #545454;
 
 $primary-400: #3867FA;
 $primary-600: #223F9C;
@@ -52,7 +55,7 @@ $primary-600: #223F9C;
   font-size: 16px;
   font-weight: 400;
   line-height: 26px;
-  letter-spacing: 0.3;
+  letter-spacing: 0.3px;
   text-align: left;
 }
 
@@ -171,3 +174,28 @@ a {
 /* Selected elements */
 ::-moz-selection { color: unset; background: unset; }
 ::selection { color: unset; background: unset; }
+
+.greedy-nav .visible-links a {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0.3px;
+  text-align: left;
+  color: $black;
+
+  &:hover {
+    color: #545454;
+
+    &:before {
+      content: none;
+    }
+  }
+}
+
+.site-title {
+  display: none !important;
+}
+
+.site-logo img {
+  width: 215px;
+}

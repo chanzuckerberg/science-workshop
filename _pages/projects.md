@@ -13,7 +13,7 @@ layout: splash
         These projects are interactive! Feel free to share feedback with our team about any of these featured projects. Folks are encouraged to make pull requests, add comments, and reach out to our team with any questions.
       </p>
     </div>
-    <img class="flask-svg" src="{{ "assets/images/science-worshop-banner-img.svg" | relative_url }}" />
+    <img class="flask-svg" src="{{ 'assets/images/science-worshop-banner-img.svg' | relative_url }}" />
   </div>
   <div>
     <div>General questions? Email ghaliburton@chanzuckerberg.com.</div>
