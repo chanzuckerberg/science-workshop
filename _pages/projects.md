@@ -21,8 +21,9 @@ layout: splash
   </div>
 </div>
 
-<div class="warning">
-  The projects in the Science Worshop may not be currently maintained, and may break or disappear without notice.
+<div class="warning font-body-l">
+  <img class="icon-large" src="{{ "assets/images/exclamation.svg" | relative_url }}">
+  The projects in the Science Workshop may not be currently maintained and may break or disappear without notice!
 </div>
 
 <span class="font-body-m">Jump to Category:</span>
@@ -34,31 +35,39 @@ layout: splash
 <!-- Papers project details from _data/projects.yml -->
 {% if site.data.papers %}
   <div id="papers" class="font-header-xl">Papers</div>
+  <div class="card-container">
+    {% for project in site.data.papers %}
+      {% include project_card.html project=project%}
+    {% endfor %}
+  </div>
 {% endif %}
-{% for project in site.data.papers %}
-  {% include project_card.html project=project%}
-{% endfor %}
 
 <!-- Tools project details from _data/tools.yml -->
 {% if site.data.tools %}
   <div id="tools" class="font-header-xl">Tools</div>
+  <div class="card-container">
+    {% for project in site.data.tools %}
+      {% include project_card.html project=project%}
+    {% endfor %}
+  </div>
 {% endif %}
-{% for project in site.data.tools %}
-  {% include project_card.html project=project%}
-{% endfor %}
 
 <!-- Trainings project details from _data/trainings.yml -->
 {% if site.data.trainings %}
   <div id="trainings" class="font-header-xl">Trainings</div>
+  <div class="card-container">
+    {% for project in site.data.trainings %}
+      {% include project_card.html project=project%}
+    {% endfor %}
+  </div>
 {% endif %}
-{% for project in site.data.trainings %}
-  {% include project_card.html project=project%}
-{% endfor %}
 
 <!-- Other project details from _data/other.yml -->
 {% if site.data.other %}
   <div id="other" class="font-header-xl">Other</div>
+  <div class="card-container">
+    {% for project in site.data.other %}
+      {% include project_card.html project=project%}
+    {% endfor %}
+  </div>
 {% endif %}
-{% for project in site.data.other %}
-  {% include project_card.html project=project%}
-{% endfor %}
