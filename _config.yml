@@ -18,7 +18,7 @@ title_separator: "|"
 description: >- # this means to ignore newlines until "baseurl:"
   The Science Workshop is an active development space for learning
   and sharing ideas.
-baseurl: science-workshop/
+baseurl: /science-workshop
 github_username: mmmmmmaya
 minimal_mistakes_skin: default
 github: [metadata]
