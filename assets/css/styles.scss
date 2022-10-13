@@ -1,0 +1,91 @@
+---
+---
+
+/**
+ * Colors
+ */
+$gray-100: #F8F8F8;
+
+$primary-400: #3867FA;
+$primary-600: #223F9C;
+
+.bg-gray {
+  background-color: $gray-100;
+}
+
+/**
+ * Fonts
+ */
+.font-header-xxl {
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 34px;
+  letter-spacing: 0.3px;
+  text-align: left;
+}
+
+.font-header-xl {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: 0.3px;
+  text-align: left;
+}
+
+.font-body-m {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0.3;
+  text-align: left;
+}
+
+/**
+ * Layouts
+ */
+.flex {
+  display: flex;
+}
+
+/**
+ * Links
+ */
+
+a.category-link {
+  color: $primary-400;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: none !important;
+    color: $primary-600;
+  }
+}
+
+/**
+ * Images
+ */
+.flask-svg {
+  height: 250px;
+  width: 250px;
+}
+
+/**
+ * Components
+ */
+
+.warning {
+  width: 100%;
+  background-color: #FCF6EC;
+}
+
+#footer, footer {
+  background-color: white;
+}
+
+/*****************************/
+/* OVERRIDES FROM THEME FILE */
+/*****************************/
+
+/* Selected elements */
+::-moz-selection { color: unset; background: unset; }
+::selection { color: unset; background: unset; }
