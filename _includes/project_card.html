@@ -1,11 +1,23 @@
-<div>
-  <a href="{{ project.url }}">{{ project.title }}</a>
+<div class="project-card">
+  <div class="flex">
+    <img class="icon-large" src="assets/images/IconProjectPublicLarge.svg" />
+    <a href="{{ project.url }}">{{ project.title }}</a>
+  </div>
   <div>
     {{ project.shortDescription}}
   </div>
-  <div>
-    {{ project.stars }}
-    {{ project.forks }}
-    {{ project.url }}
+  <div class="flex">
+    <div class="flex align-center">
+      <img class="icon-small" src="assets/images/star.svg" />
+      {{ project.stars }}
+    </div>
+    <div class="flex align-center">
+      <img class="icon-small" src="assets/images/fork.svg" />
+      {{ project.forks }}
+    </div>
+    <div class="flex align-center">
+      <img class="icon-small" src="assets/images/open.svg" />
+      <a href="{{ project.url }}">More Info</a>
+    </div>
   </div>
 </div>

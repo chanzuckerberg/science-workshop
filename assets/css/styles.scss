@@ -5,6 +5,7 @@
  * Colors
  */
 $gray-100: #F8F8F8;
+$gray-300: #CCCCCC;
 
 $primary-400: #3867FA;
 $primary-600: #223F9C;
@@ -49,6 +50,10 @@ $primary-600: #223F9C;
  */
 .flex {
   display: flex;
+
+  .align-center {
+    align-items: center;
+  }
 }
 
 /**
@@ -84,6 +89,28 @@ a.category-link {
 
 #footer, footer {
   background-color: white;
+}
+
+/**
+ * Project cards
+ */
+.project-card {
+  width: 365px;
+  height: 180px;
+  border: 1px solid $gray-300;
+  border-radius: 4px;
+  padding: 22px;
+  margin: 22px;
+
+  .icon-large {
+    height: 22px;
+    width: 22px;
+  }
+
+  .icon-small {
+    height: 14px;
+    width: 14px;
+  }
 }
 
 /*****************************/
