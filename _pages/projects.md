@@ -26,17 +26,39 @@ layout: splash
 </div>
 
 <span class="font-body-m">Jump to Category:</span>
-<a class="category-link font-body-m">Papers</a>
-<a class="category-link font-body-m">Tools</a>
-<a class="category-link font-body-m">Training</a>
-<a class="category-link font-body-m">Other</a>
+<a class="category-link font-body-m" href="#papers">Papers</a>
+<a class="category-link font-body-m" href="#tools">Tools</a>
+<a class="category-link font-body-m" href="#trainings">Trainings</a>
+<a class="category-link font-body-m" href="#other">Other</a>
 
-<div class="font-header-xl">Papers</div>
-{% include repo_card.html reponame="the-universe" %}
+<!-- Papers project details from _data/projects.yml -->
+{% if site.data.papers %}
+  <div id="papers" class="font-header-xl">Papers</div>
+{% endif %}
+{% for project in site.data.papers %}
+  {% include project_card.html project=project%}
+{% endfor %}
 
-<div class="font-header-xl">Tools</div>
+<!-- Tools project details from _data/tools.yml -->
+{% if site.data.tools %}
+  <div id="tools" class="font-header-xl">Tools</div>
+{% endif %}
+{% for project in site.data.tools %}
+  {% include project_card.html project=project%}
+{% endfor %}
 
-<div class="font-header-xl">Training</div>
+<!-- Trainings project details from _data/trainings.yml -->
+{% if site.data.trainings %}
+  <div id="trainings" class="font-header-xl">Trainings</div>
+{% endif %}
+{% for project in site.data.trainings %}
+  {% include project_card.html project=project%}
+{% endfor %}
 
-<div class="font-header-xl">Other</div>
-
+<!-- Other project details from _data/other.yml -->
+{% if site.data.other %}
+  <div id="other" class="font-header-xl">Other</div>
+{% endif %}
+{% for project in site.data.other %}
+  {% include project_card.html project=project%}
+{% endfor %}
