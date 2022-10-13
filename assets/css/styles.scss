@@ -59,9 +59,23 @@ $primary-600: #223F9C;
   text-align: left;
 }
 
+.font-body-s {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0.3px;
+  text-align: left;
+}
+
 /**
  * Layouts
  */
+.content {
+  max-width: 1280px;
+  margin: auto;
+  padding: 0 130px;
+}
+
 .flex {
   display: flex;
 }
@@ -107,6 +121,7 @@ a {
 .flask-svg {
   height: 250px;
   width: 250px;
+  margin-left: $xl-space;
 }
 
 /**
@@ -130,6 +145,10 @@ a {
 
 #footer, footer {
   background-color: white;
+}
+
+.sw-header {
+  padding: $xl-space 0;
 }
 
 /**
@@ -198,4 +217,14 @@ a {
 
 .site-logo img {
   width: 215px;
+}
+
+#main {
+  margin: 0;
+  padding: 0;
+  max-width: unset;
+
+  section {
+    width: 100%;
+  }
 }
