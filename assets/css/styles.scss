@@ -20,6 +20,8 @@ $primary-600: #223F9C;
 /**
  * Space
  */
+  $xs-space: 4px;
+  $small-space: 10px;
   $medium-space: 12px;
   $large-space: 22px;
   $xl-space: 34px;
@@ -39,6 +41,15 @@ $primary-600: #223F9C;
   font-size: 22px;
   font-weight: 600;
   line-height: 30px;
+  letter-spacing: 0.3px;
+  text-align: left;
+  margin-bottom: $large-space;
+}
+
+.font-header-l {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
   letter-spacing: 0.3px;
   text-align: left;
 }
@@ -67,11 +78,19 @@ $primary-600: #223F9C;
   text-align: left;
 }
 
+.font-body-xs {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.3px;
+  text-align: left;
+}
+
 /**
  * Layouts
  */
 .content {
-  max-width: 1280px;
+  max-width: 1500px;
   margin: auto;
   padding: 0 130px;
 }
@@ -110,8 +129,12 @@ a {
     color: $primary-600;
   }
 
+  &:visited {
+    color: $primary-400;
+  }
+
   &.category-link {
-    margin: $large-space;
+    margin: $medium-space;
   }
 }
 
@@ -132,15 +155,19 @@ a {
   width: 100%;
   background-color: #FCF6EC;
   margin: $xl-space 0;
-  padding: 10px;
+  padding: $small-space;
   display: flex;
   align-items: center;
 
   img {
     height: 20px;
     width: 20px;
-    margin-right: 10px;
+    margin-right: $small-space;
   }
+}
+
+.jump-menu {
+  margin-bottom: $xl-space;
 }
 
 #footer, footer {
@@ -160,7 +187,7 @@ a {
   border: 1px solid $gray-300;
   border-radius: 4px;
   padding: $large-space;
-  margin: $large-space $large-space $large-space 0;
+  margin: 0 $large-space $large-space 0;
 
   .icon-large {
     height: 22px;
@@ -171,13 +198,19 @@ a {
   .icon-small {
     height: 14px;
     width: 14px;
+    margin-right: $xs-space;
   }
 
   .info-bar-item {
     display: flex;
     align-items: center;
     flex: 0 1 auto;
-    margin-right: $medium-space;
+    margin-right: $large-space;
+    color: $primary-400;
+  }
+
+  .project-link {
+    margin-bottom: $small-space;
   }
 }
 

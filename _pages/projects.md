@@ -10,6 +10,8 @@ layout: splash
 
       <p class="font-body-m">
         Our hope is to share work-in-progress projects from members of the CZI science team, including early stage designs and prototypes, training materials, past webinars, and more. The featured projects on this page are not an exhaustive list of our work.
+      </p>
+      <p class="font-body-m">
         These projects are interactive! Feel free to share feedback with our team about any of these featured projects. Folks are encouraged to make pull requests, add comments, and reach out to our team with any questions.
       </p>
       <div class="font-body-s">
@@ -31,11 +33,13 @@ layout: splash
     The projects in the Science Workshop may not be currently maintained and may break or disappear without notice!
   </div>
 
-  <span class="font-body-m">Jump to Category:</span>
-  <a class="category-link font-body-m" href="#papers">Papers</a>
-  <a class="category-link font-body-m" href="#tools">Tools</a>
-  <a class="category-link font-body-m" href="#trainings">Trainings</a>
-  <a class="category-link font-body-m" href="#other">Other</a>
+  <div class="jump-menu">
+    <span class="font-body-m">Jump to Category:</span>
+    <a class="category-link font-body-m" href="#papers">Papers</a>
+    <a class="category-link font-body-m" href="#tools">Tools</a>
+    <a class="category-link font-body-m" href="#trainings">Trainings</a>
+    <a class="category-link font-body-m" href="#other">Other</a>
+  </div>
 
   <!-- Papers project details from _data/projects.yml -->
   {% if site.data.papers %}

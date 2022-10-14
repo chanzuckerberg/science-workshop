@@ -1,26 +1,26 @@
 <div class="project-card flex flex-col">
-  <div class="flex align-items-center">
+  <div class="flex align-items-center project-link">
     <img class="icon-large" src="{{ 'assets/images/IconProjectPublicLarge.svg' | relative_url }}" />
-    <a href="{{ project.url }}">{{ project.title }}</a>
+    <a class="font-header-l" href="{{ project.url }}">{{ project.title }}</a>
   </div>
-  <div class="flex grow">
+  <div class="flex grow font-body-s">
     {{ project.shortDescription}}
   </div>
   <div class="flex">
     {% if project.stars %}
-      <div class="info-bar-item">
+      <div class="info-bar-item font-body-xs">
         <img class="icon-small" src="{{ 'assets/images/star.svg' | relative_url }}" />
         {{ project.stars }}
       </div>
     {% endif %}
     {% if project.forks %}
-      <div class="info-bar-item">
+      <div class="info-bar-item font-body-xs">
         <img class="icon-small" src="{{ 'assets/images/fork.svg' | relative_url }}" />
         {{ project.forks }}
       </div>
     {% endif %}
     {% if project.infoLink %}
-      <div class="info-bar-item">
+      <div class="info-bar-item font-body-xs">
         <img class="icon-small" src="{{ 'assets/images/open.svg' | relative_url }}" />
         <a href="{{ project.url }}">More Info</a>
       </div>
