@@ -29,61 +29,60 @@ $primary-600: #223F9C;
 /**
  * Fonts
  */
-.font-header-xxl {
-  font-size: 26px;
-  font-weight: 600;
-  line-height: 34px;
+@mixin common-font {
+  font-family: "Open sans";
   letter-spacing: 0.3px;
   text-align: left;
 }
 
+.font-header-xxl {
+  @include common-font;
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 34px;
+}
+
 .font-header-xl {
+  @include common-font;
   font-size: 22px;
   font-weight: 600;
   line-height: 30px;
-  letter-spacing: 0.3px;
-  text-align: left;
   margin-bottom: $large-space;
 }
 
 .font-header-l {
+  @include common-font;
   font-size: 18px;
   font-weight: 600;
   line-height: 24px;
-  letter-spacing: 0.3px;
-  text-align: left;
 }
 
 .font-body-l {
+  @include common-font;
   font-size: 18px;
   font-weight: 600;
   line-height: 28px;
-  letter-spacing: 0.3px;
-  text-align: left;
 }
 
 .font-body-m {
+  @include common-font;
   font-size: 16px;
   font-weight: 400;
   line-height: 26px;
-  letter-spacing: 0.3px;
-  text-align: left;
 }
 
 .font-body-s {
+  @include common-font;
   font-size: 14px;
   font-weight: 400;
   line-height: 26px;
-  letter-spacing: 0.3px;
-  text-align: left;
 }
 
 .font-body-xs {
+  @include common-font;
   font-size: 13px;
   font-weight: 400;
   line-height: 20px;
-  letter-spacing: 0.3px;
-  text-align: left;
 }
 
 /**
