@@ -6,7 +6,9 @@ layout: splash
 <div class="sw-header bg-gray">
   <div class="content flex">
     <div>
-      <h1 class="font-header-xxl">The Science Workshop is an active development space for learning, sharing, and iteration.</h1>
+      <h1 class="font-header-xxl">
+        The Science Workshop is an active development space for learning, sharing, and iteration.
+      </h1>
 
       <p class="font-body-m">
         Our hope is to share work-in-progress projects from members of the CZI science team, including early stage designs and prototypes, training materials, past webinars, and more. The featured projects on this page are not an exhaustive list of our work.
@@ -29,7 +31,7 @@ layout: splash
 
 <div class="content">
   <div class="warning font-body-l">
-    <img class="icon-large" src="{{ "assets/images/exclamation.svg" | relative_url }}">
+    <img class="icon-large" src="{{ 'assets/images/exclamation.svg' | relative_url }}">
     The projects in the Science Workshop may not be currently maintained and may break or disappear without notice!
   </div>
 
@@ -45,7 +47,8 @@ layout: splash
   {% if site.data.papers %}
     <div id="papers" class="font-header-xl">Papers</div>
     <div class="card-container">
-      {% for project in site.data.papers %}
+      {% assign sorted = site.data.papers | sort_natural: "title" %}
+      {% for project in sorted %}
         {% include project_card.html project=project%}
       {% endfor %}
     </div>
@@ -55,7 +58,8 @@ layout: splash
   {% if site.data.tools %}
     <div id="tools" class="font-header-xl">Tools</div>
     <div class="card-container">
-      {% for project in site.data.tools %}
+      {% assign sorted = site.data.tools | sort_natural: "title" %}
+      {% for project in sorted %}
         {% include project_card.html project=project%}
       {% endfor %}
     </div>
@@ -65,7 +69,8 @@ layout: splash
   {% if site.data.trainings %}
     <div id="trainings" class="font-header-xl">Trainings</div>
     <div class="card-container">
-      {% for project in site.data.trainings %}
+      {% assign sorted = site.data.trainings | sort_natural: "title" %}
+      {% for project in sorted %}
         {% include project_card.html project=project%}
       {% endfor %}
     </div>
@@ -75,7 +80,8 @@ layout: splash
   {% if site.data.other %}
     <div id="other" class="font-header-xl">Other</div>
     <div class="card-container">
-      {% for project in site.data.other %}
+      {% assign sorted = site.data.other | sort_natural: "title" %}
+      {% for project in sorted %}
         {% include project_card.html project=project%}
       {% endfor %}
     </div>

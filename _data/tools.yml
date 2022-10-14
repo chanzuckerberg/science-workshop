@@ -1,27 +1,37 @@
 - url: "https://github.com/chanzuckerberg/czid-notebooks"
-  title: title
-  shortDescription: shortDescription
-  stars: 2
-  forks: 4
-
-- url: "https://github.com/GullyBurns/czLandscapingTk/"
-  title: title
-  shortDescription: shortDescription
+  title:  CZID notebooks
+  shortDescription: Scripts for downstream analysis of IDseq data
   stars: 1
-  forks: 3
-  infoLink: "www.google.com"
+  forks: 2
+  infoLink: "https://czid.org/"
+
+- url: "https://galago-labs.czgenepi.org/"
+  title: Galago
+  shortDescription: >-
+    Answer basic epidemiological questions using pathogen genomic data,
+    without having to become an expert in phylogenetics.
+
+- url: "https://labs.cellxgene.cziscience.com/ontology-ui/a/ontology/CL"
+  title: cellxgene ontology
+  shortDescription: Interactive ontological data explorer
+  infoLink: "https://cellxgene.cziscience.com/"
 
 - url: "https://github.com/GullyBurns/czLandscapingTk/"
-  title: No stars
-  shortDescription: shortDescription no stars
-  forks: 3
+  title: Chan Zuckerberg Landscaping Toolkit
+  shortDescription: Public facing landscaping tools for the literature
+  forks: 0
+  stars: 0
+  infoLink: "https://gullyburns.github.io/czLandscapingTk/"
 
-- url: "https://github.com/GullyBurns/czLandscapingTk/"
-  title: No forks
-  shortDescription: shortDescription no forks
-  stars: 3
+- url: "https://github.com/chanzuckerberg/rst_landscaping_ui"
+  title: Research Science Team (RST) Landscaping UI Tool
+  forks: 0
+  stars: 0
 
-- title: No link
-  shortDescription: shortDescription no stars
-  forks: 3
-  stars: 5
+- url: "https://github.com/katrinakalantar/clustered-phylotree"
+  title: Clustered Phylotree
+  shortDescription: WDL workflow for split-kmer phylogeny with pre-filtering by hierarchical clustering
+  forks: 0
+  stars: 0
+
+- url: "https://github.com/kephale/napari-tyssue"

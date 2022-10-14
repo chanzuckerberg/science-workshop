@@ -1,0 +1,3 @@
+- url: "https://arxiv.org/abs/2209.00693"
+  title: A large dataset of software mentions in the biomedical literature
+  shortDescription: We describe the CZ Software Mentions dataset, a new dataset of software mentions in biomedical papers.

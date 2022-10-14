@@ -1,9 +1,11 @@
 <div class="project-card flex flex-col">
-  <div class="flex align-items-center project-link">
+  <div class="flex align-items-start project-link">
     <img class="icon-large" src="{{ 'assets/images/IconProjectPublicLarge.svg' | relative_url }}" />
-    <a class="font-header-l" href="{{ project.url }}">{{ project.title }}</a>
+    <a class="font-header-l title" title="{{ project.title }}" href="{{ project.url }}">
+      {{ project.title }}
+    </a>
   </div>
-  <div class="flex grow font-body-s">
+  <div class="flex grow font-body-s description">
     {{ project.shortDescription}}
   </div>
   <div class="flex">
@@ -22,7 +24,7 @@
     {% if project.infoLink %}
       <div class="info-bar-item font-body-xs">
         <img class="icon-small" src="{{ 'assets/images/open.svg' | relative_url }}" />
-        <a href="{{ project.url }}">More Info</a>
+        <a href="{{ project.infoLink }}">More Info</a>
       </div>
     {% endif %}
   </div>
