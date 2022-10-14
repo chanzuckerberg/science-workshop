@@ -37,10 +37,18 @@ layout: splash
 
   <div class="jump-menu">
     <span class="font-body-m">Jump to Category:</span>
-    <a class="category-link font-body-m" href="#papers">Papers</a>
-    <a class="category-link font-body-m" href="#tools">Tools</a>
-    <a class="category-link font-body-m" href="#trainings">Trainings</a>
-    <a class="category-link font-body-m" href="#other">Other</a>
+    {% if site.data.papers %}
+      <a class="category-link font-body-m" href="#papers">Papers</a>
+    {% endif %}
+    {% if site.data.tools %}
+      <a class="category-link font-body-m" href="#tools">Tools</a>
+    {% endif %}
+    {% if site.data.trainings %}
+      <a class="category-link font-body-m" href="#trainings">Trainings</a>
+    {% endif %}
+    {% if site.data.other %}
+      <a class="category-link font-body-m" href="#other">Other</a>
+    {% endif %}
   </div>
 
   <!-- Papers project details from _data/projects.yml -->
